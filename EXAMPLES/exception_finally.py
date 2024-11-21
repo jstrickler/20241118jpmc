@@ -1,22 +1,13 @@
+import sqlite3
 
+conn = None
 try:
-    x = 5
-    y = 37
-    z = x + y
-    print("z is", z)
-except TypeError as err:    # Catch TypeError
-    print("Caught exception:", err)
+    conn = sqlite3.connect("wombats.db")
+except sqlite3.DatabaseError as err:
+    print(err)
+    exit(1)  # exit program
+else:
+    pass # use the db here
 finally:
-    print("Don't care whether we had an exception")  # Print whether TypeError is caught or not
-
-print()
-
-try:
-    x = 5
-    y = "cheese"
-    z = x + y
-    print("Bottom of try")
-except TypeError as err:
-    print("Caught exception:", err)
-finally:
-    print("Still don't care whether we had an exception")
+    if conn:
+        conn.close()

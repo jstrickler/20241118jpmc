@@ -12,7 +12,7 @@ logging.info("this is information")
 logging.warning("this is a warning")
 logging.error("this is an ERROR")
 value = 38.7
-logging.error("Invalid value %s", value)
+logging.error("Argument passed is %s", value)
 logging.info("this is information")
 logging.critical("this is critical")
 

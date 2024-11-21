@@ -2,7 +2,7 @@
 try:
     x = 5
     y = "cheese"
-    z = x + y
+    # z = x + y
     f = open("sesame.txt")
     print("Bottom of try")
 
