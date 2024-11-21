@@ -1,4 +1,9 @@
-from geometry import circle_area, rectangle_area, square_area
+from alpha.mathlib.geometry import circle_area, rectangle_area, square_area
+import heapq
+import sys
+print(sys.modules['heapq'])
+import numpy
+print(sys.modules['numpy'])
 
 a1 = circle_area(8)
 a2 = rectangle_area(10, 12)

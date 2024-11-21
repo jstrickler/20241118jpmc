@@ -1,5 +1,4 @@
-
-from pprint import pprint
+from pprint import pprint  # dev only
 
 knight_info = {}  # create empty dict
 
@@ -8,7 +7,9 @@ with open("../DATA/knights.txt") as knights_in:
         name, title, color, quest, comment = line.rstrip('\n\r').split(":")
         knight_info[name] = title, color, quest, comment  # create new dict element with name as key and a tuple of the other fields as the value
 
-pprint(knight_info)
+print(knight_info)
+print()
+pprint(knight_info, sort_dicts=False)
 print()
 
 for name, info in knight_info.items():

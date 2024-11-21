@@ -7,11 +7,11 @@ area = circle_area(diameter)
 area = rectangle_area(length, width)
 area = square_area(side)
 """
-import math   # load math.py
+
 
 PI = math.pi
 
-def circle_area(diameter):
+def circle_area(diameter: int|float) -> float:
     """
     Compute the area of a circle from a given diameter
 
@@ -49,3 +49,5 @@ if __name__ == "__main__":
     
     area3 = rectangle_area(9, 13)
     print(f"area3: {area3}")
+
+#     x = circle_area('abc')
